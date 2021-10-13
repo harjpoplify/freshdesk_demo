@@ -1,0 +1,29 @@
+// Place all the styles related to the Queries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.contact-us-form {
+  margin-top: 35px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  box-shadow: 1px 1px 8px lightgrey;
+
+  &.container {
+    max-width: 510px;
+    padding: 15px 30px 30px 30px;
+
+    .row {
+      margin-top: 15px;
+      --bs-gutter-x: 0px;
+      font-size: 13px;
+  
+      .form-control.form-control-sm {
+        font-size: 12px;
+      }
+      input[type="submit"] {
+        font-size: 13px;
+        margin-top: 12px;
+      }
+    }
+  }
+}

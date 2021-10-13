@@ -1,0 +1,35 @@
+<div class="contact-us-form container">
+  <h4 class="mt-2">Contact Us</h4>
+  <hr/>
+  
+  <%= form_for @query do |f| %>
+    <div class="row mt-4">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control form-control-sm", placeholder: "Enter name*", required: true %>
+    </div>
+
+    <div class="row">
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control form-control-sm", placeholder: "Enter email", required: true %>
+    </div>
+
+    <div class="row">
+      <%= f.label :phone %>
+      <%= f.number_field :phone, class: "form-control form-control-sm", placeholder: "Enter phone number" %>
+    </div>
+
+    <div class="row">
+      <%= f.label :subject %>
+      <%= f.text_field :subject, class: "form-control form-control-sm", placeholder: "Enter subject*", required: true %>
+    </div>
+
+    <div class="row">
+      <%= f.label :description %>
+      <%= f.text_area :description, class: "form-control form-control-sm", rows: "5", placeholder: "Enter description" %>
+    </div>
+
+    <div class="row">
+      <%= f.submit "Submit Query", class: "btn btn-success" %>
+    </div>
+  <% end %>
+</div>
